@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dubboapi-controller:war exploded">
+    <output-path>$PROJECT_DIR$/dubboapi-controller/target/dubboapi-controller</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dubboapi-controller" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dubboapi-web/target/dubboapi-controller/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dubboapi-controller/web/Web" />
+    </root>
+  </artifact>
+</component>

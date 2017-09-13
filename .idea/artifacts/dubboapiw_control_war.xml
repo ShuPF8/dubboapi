@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubboapiw-control:war">
+    <output-path>$PROJECT_DIR$/dubboapiw-control/target</output-path>
+    <root id="archive" name="dubboapi-wcontrol.war">
+      <element id="artifact" artifact-name="dubboapiw-control:war exploded" />
+    </root>
+  </artifact>
+</component>
