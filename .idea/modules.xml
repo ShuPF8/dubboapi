@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dubboapi.iml" filepath="$PROJECT_DIR$/dubboapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubboapi-common/dubboapi-common.iml" filepath="$PROJECT_DIR$/dubboapi-common/dubboapi-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubboapi-customer/dubboapi-customer.iml" filepath="$PROJECT_DIR$/dubboapi-customer/dubboapi-customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubboapi-remote/dubboapi-remote.iml" filepath="$PROJECT_DIR$/dubboapi-remote/dubboapi-remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubboapi-common/dubboapi-wcontrol.iml" filepath="$PROJECT_DIR$/dubboapi-common/dubboapi-wcontrol.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubboapiw-control/dubboapiw-control.iml" filepath="$PROJECT_DIR$/dubboapiw-control/dubboapiw-control.iml" />

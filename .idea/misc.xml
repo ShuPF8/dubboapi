@@ -12,6 +12,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/dubboapi-customer/pom.xml" />
         <option value="$PROJECT_DIR$/dubboapi-web/pom.xml" />
       </set>
     </option>

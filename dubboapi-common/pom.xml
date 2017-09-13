@@ -34,6 +34,13 @@
             <version>4.3.7.RELEASE</version>
         </dependency>
         <!--end-->
+        <!--google guava工具-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <!--end-->
     </dependencies>
 
 </project>

@@ -6,7 +6,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>dubboapi-wcontrol</artifactId>
+    <artifactId>dubboapi-control</artifactId>
     <packaging>war</packaging>
     <name>dubboapi-wcontrol Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.spf</groupId>
-            <artifactId>dubboapi-customer</artifactId>
+            <artifactId>dubboapi-remote</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -32,6 +32,16 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>4.3.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1</version>
         </dependency>
     </dependencies>
 

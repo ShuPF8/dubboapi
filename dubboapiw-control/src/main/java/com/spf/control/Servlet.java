@@ -1,6 +1,6 @@
 package com.spf.control;
 
-import com.spf.facede.api.DemoService;
+import com.spf.facede.api.DemoApi;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -41,20 +41,20 @@ public class Servlet extends HttpServlet {
         ServletContext sc = request.getSession().getServletContext();
         //第一种获取bean方法，获取失败时抛出异常
         ApplicationContext ac1 = WebApplicationContextUtils.getRequiredWebApplicationContext(sc);
-        DemoService demoService1 = (DemoService)ac1.getBean("demoService");
+        DemoApi demoService1 = (DemoApi)ac1.getBean("demoApi");
         String name1 = demoService1.getName("tom", "Edison");
         out.println(name1);
         out.println("<br>");
         //第二种获取bean方法，获取失败时返回null
         ApplicationContext ac2 = WebApplicationContextUtils.getWebApplicationContext(sc);
-        DemoService demoService2 = (DemoService)ac2.getBean("demoService");
+        DemoApi demoService2 = (DemoApi)ac2.getBean("demoApi");
         String name2 = demoService2.getName("tom", "Edison");
         out.println(name2);
         out.println("<br>");
         //第三种获取bean方法
         WebApplicationContext wac = (WebApplicationContext)sc.getAttribute(
                 WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE);
-        DemoService demoService3 = (DemoService)wac.getBean("demoService");
+        DemoApi demoService3 = (DemoApi)wac.getBean("demoApi");
         String name3 = demoService3.getName("tom", "Edison");
         out.println(name3);
         out.println("<br>");

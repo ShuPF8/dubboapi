@@ -12,14 +12,18 @@
         ">
 
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
-    <dubbo:application name="customer" />
+    <dubbo:application name="${dubbo.application.name}" />
+
+    <dubbo:protocol name="dubbo" port="${dubbo.provider.port}"
+                    threads="300"/>
 
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="${dubbo.registry.zookeeper}"/>
 
-    <!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->
-    <dubbo:reference id="demoService"
-                     interface="com.spf.facede.api.DemoService"/>
+    <dubbo:monitor protocol="registry"/>
 
+    <!-- 提供者默认配置 选用快速失败策略 -->
+    <dubbo:provider timeout="90000" cluster="failfast"/>
+    <dubbo:consumer check="${dubbo.consumer.check}"/>
 </beans>

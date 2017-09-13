@@ -11,10 +11,17 @@
     <modules>
         <module>dubboapi-common</module>
         <module>dubboapi-remote</module>
-        <module>dubboapi-customer</module>
         <module>dubboapiw-control</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.8</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
